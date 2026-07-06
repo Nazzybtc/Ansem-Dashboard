@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#090914;
+    color:#ffffff;
+    font-family:'Inter',sans-serif;
+}
+
+#loadingOverlay{
+    position:fixed;
+    inset:0;
+    background:#090914;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader{
+    width:70px;
+    height:70px;
+    border:6px solid #2a2a4a;
+    border-top:6px solid #8b5cf6;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:#111126;
+
+    border-bottom:1px solid #24244d;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:48px;
+    height:48px;
+
+}
+
+.logo h1{
+
+    color:#9d6cff;
+    font-size:28px;
+
+}
+
+#clock{
+
+    font-size:18px;
+    color:#b8b8d8;
+
+}
+
+main{
+
+    width:95%;
+    margin:auto;
+    padding:30px 0;
+
+}
+
+.hero{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+.card{
+
+    background:#15152d;
+
+    border:1px solid #2b2b55;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 0 20px rgba(139,92,246,.15);
+
+}
+
+.card h1{
+
+    margin-top:10px;
+
+    font-size:34px;
+
+    color:#ffffff;
+
+}
+
+.card h2{
+
+    margin-bottom:15px;
+
+    color:#9d6cff;
+
+}
+
+.card h3{
+
+    color:#bdbde6;
+
+    margin-bottom:8px;
+
+}
+
+#tokenChange{
+
+    color:#35d07f;
+
+    font-weight:700;
+
+    margin-top:10px;
+
+}
+
+.market-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+#topGainers div,
+#topLosers div,
+#tokenGrid div,
+#whaleFeed div,
+#tradeFeed div{
+
+    background:#1d1d3d;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    margin-top:10px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    background:#101022;
+
+    color:white;
+
+    border:1px solid #303060;
+
+    border-radius:10px;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+button:hover{
+
+    background:#7345eb;
+
+}
+
+footer{
+
+    text-align:center;
+
+    margin:40px 0 20px;
+
+    color:#8888aa;
+
+}
+
+@media(max-width:900px){
+
+.hero,
+.market-grid,
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+header{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+}
