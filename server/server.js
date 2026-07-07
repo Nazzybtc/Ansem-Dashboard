@@ -662,7 +662,9 @@ console.log("TOKEN PRICE:", tokenPrice);
 
 const trades = [];
 
+const seen = new Set();
 
+const trades = [];
 
 for(const tx of transactions){
 
@@ -712,7 +714,11 @@ if (
 }
 
 
+const txId = tx.signature || tx.transactionSignature;
 
+if (seen.has(txId)) continue;
+
+seen.add(txId);
 
 trades.push({
 
