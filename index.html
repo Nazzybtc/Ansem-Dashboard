@@ -1,237 +1,495 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
+
 <meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
 
-<title>ANSEM Dashboard V3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link
-rel="stylesheet"
-href="css/style.css">
 
-<link
-rel="preconnect"
-href="https://fonts.googleapis.com">
+<title>
+ANSEM Dashboard V5
+</title>
 
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
 
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 
+
+
+
+
 <body>
+
+
+
+<!-- =========================
+LOADING
+========================= -->
+
 
 <div id="loadingOverlay">
 
-    <div class="loader"></div>
+
+<div class="loader"></div>
+
 
 </div>
+
+
+
+
+
+
+
+<!-- =========================
+HEADER
+========================= -->
+
 
 <header>
 
-    <div class="logo">
 
-        <img
-        src="assets/logo.png"
-        alt="ANSEM Logo">
+<div class="logo">
 
-        <h1>ANSEM Dashboard</h1>
 
-    </div>
+<img src="assets/logo.png" alt="ANSEM Logo">
 
-    <div class="header-right">
 
-        <div id="clock">
-            Loading...
-        </div>
+<h1>
+ANSEM Dashboard
+</h1>
 
-    </div>
+
+</div>
+
+
+
+
+<div id="clock">
+
+Loading...
+
+</div>
+
 
 </header>
 
+
+
+
+
+
+
+
+
 <main>
+
+
+
+
+
+<!-- =========================
+ANSEM OVERVIEW
+========================= -->
+
 
 <section class="hero">
 
+
+
+
+
 <div class="card">
 
-<h2>ANSEM</h2>
+
+<h2>
+ANSEM
+</h2>
+
 
 <h1 id="tokenPrice">
+
 Loading...
+
 </h1>
 
+
 <p id="tokenChange">
+
 Loading...
+
 </p>
 
+
 </div>
+
+
+
+
+
 
 <div class="card">
 
-<h3>Market Cap</h3>
+
+<h3>
+Market Cap
+</h3>
+
 
 <h2 id="marketCap">
+
 Loading...
+
 </h2>
+
 
 </div>
 
+
+
+
+
+
+
 <div class="card">
 
-<h3>Liquidity</h3>
+
+<h3>
+Liquidity
+</h3>
+
 
 <h2 id="liquidity">
+
 Loading...
+
 </h2>
 
+
 </div>
+
 
 <div class="card">
 
-<h3>24H Volume</h3>
+    <h3>👥 Holders</h3>
 
-<h2 id="volume">
-Loading...
-</h2>
+    <h2 id="holders">
+        Loading...
+    </h2>
 
 </div>
 
+
+
+
+<div class="card">
+
+
+<h3>
+24H Volume
+</h3>
+
+
+<h2 id="volume">
+
+Loading...
+
+</h2>
+
+
+</div>
+
+
+
+
+
 </section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+MARKET PRICES
+========================= -->
+
 
 <section class="market-grid">
 
+
+
 <div class="card">
 
-<h3>Bitcoin</h3>
+
+<h3>
+₿ Bitcoin
+</h3>
+
 
 <h2 id="quickBTC">
+
 Loading...
+
 </h2>
+
 
 </div>
 
+
+
+
+
 <div class="card">
 
-<h3>Ethereum</h3>
+
+<h3>
+Ξ Ethereum
+</h3>
+
 
 <h2 id="quickETH">
+
 Loading...
+
 </h2>
+
 
 </div>
 
+
+
+
+
+
 <div class="card">
 
-<h3>Solana</h3>
+
+<h3>
+◎ Solana
+</h3>
+
 
 <h2 id="quickSOL">
+
 Loading...
+
 </h2>
+
 
 </div>
 
+
+
+
 </section>
+
+<!-- =========================
+GAINERS / LOSERS
+========================= -->
+
+
 <section class="dashboard-grid">
+
 
 <div class="card">
 
-<h2>Top Gainers</h2>
+
+<h2>
+🚀 Top Gainers
+</h2>
+
 
 <div id="topGainers">
 
-<p>Loading...</p>
+Loading...
 
 </div>
 
+
 </div>
+
+
+
+
+
 
 <div class="card">
 
-<h2>Top Losers</h2>
+
+<h2>
+📉 Top Losers
+</h2>
+
 
 <div id="topLosers">
 
-<p>Loading...</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="dashboard-grid">
-
-<div class="card">
-
-<h2>Trending Solana Tokens</h2>
-
-<div id="tokenGrid">
-
-<p>Loading...</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Holder Count</h2>
-
-<h1 id="holders">
-
 Loading...
 
-</h1>
+</div>
+
 
 </div>
 
+
+
+
 </section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+SMART MONEY + LIVE TRADES
+========================= -->
+
 
 <section class="dashboard-grid">
 
+
+
+
+
 <div class="card">
 
-<h2>Whale Wallet Tracker</h2>
+
+<h2>
+🐋 Smart Money Whale Tracker
+</h2>
+
+
 
 <div id="whaleFeed">
 
-<p>Coming Soon...</p>
+Loading whale activity...
 
 </div>
 
+
+
 </div>
+
+
+
+
+
+
+
 
 <div class="card">
 
-<h2>Live Buy / Sell Feed</h2>
+
+<h2>
+📊 Live ANSEM Trades
+</h2>
+
+
+
 
 <div id="tradeFeed">
 
-<p>Coming Soon...</p>
+Loading transactions...
 
 </div>
 
+
+
+
 </div>
+
+
+
+
+
 
 </section>
 
+<!-- =========================
+TRENDING SOLANA TOKENS
+========================= -->
+
+
 <section class="dashboard-grid">
+
+
+<div class="card full">
+
+
+<h2>
+🔥 Trending Solana Tokens
+</h2>
+
+
+
+<div id="tokenGrid" class="token-grid">
+
+
+Loading...
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+MARKET SENTIMENT
+========================= -->
+
+
+<section class="dashboard-grid">
+
+
+
+
 
 <div class="card">
 
-<h2>Fear & Greed</h2>
+
+<h2>
+😨 Fear & Greed
+</h2>
+
+
 
 <h1 id="fearGreed">
 
@@ -239,16 +497,55 @@ Loading...
 
 </h1>
 
+
+
 </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+TOKEN SEARCH
+========================= -->
+
+
+<section class="dashboard-grid">
+
 
 <div class="card">
 
-<h2>Search Token</h2>
+
+<h2>
+🔍 Search Solana Token
+</h2>
+
+
 
 <input
-type="text"
+
 id="searchInput"
-placeholder="Paste Solana Token Address">
+
+type="text"
+
+placeholder="Paste Token Address"
+
+>
+
+
+
+
 
 <button id="searchButton">
 
@@ -256,10 +553,21 @@ Search
 
 </button>
 
+
+
 </div>
 
+
+
 </section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+
 <footer>
+
 
 <p>
 
@@ -267,12 +575,30 @@ Search
 
 </p>
 
+
 </footer>
+
+
+
+
 
 </main>
 
+
+
+
+
+<!-- =========================
+APP SCRIPT
+========================= -->
+
+
 <script src="js/app.js"></script>
 
+
+
+
 </body>
+
 
 </html>
